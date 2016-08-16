@@ -1,182 +1,35 @@
 {% extends 'base.twig' %}
 
-{% block header %}
-		 <div class="headertop_desc">
-			<div class="wrap">
-				<div class="nav_list">
-					<ul>
-						<li><a href="/">Home</a></li>
-						<li><a href="contact.html">Sitemap</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
-					<div class="account_desc">
-						<ul>
-							<li><a href="contact.html">Register</a></li>
-							<li><a href="contact.html">Login</a></li>
-							<li><a href="preview.html">Delivery</a></li>
-							<li><a href="#">Checkout</a></li>
-							<li><a href="#">My Account</a></li>
-						</ul>
-					</div>
-				<div class="clear"></div>
-			</div>
-	  	</div>
-  	  		<div class="wrap">
-				<div class="header_top">
-					<div class="logo">
-						<a href="/"><img src="/images/logo.png" alt="" /></a>
-					</div>
-						<div class="header_top_right">
-						  <div class="cart">
-						  	   <p><span>Cart</span><div id="dd" class="wrapper-dropdown-2"> (empty)
-						  	   	<ul class="dropdown">
-										<li>you have no items in your Shopping cart</li>
-								</ul></div></p>
-						  </div>
-							  <div class="search_box">
-					     		<form>
-					     			<input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}"><input type="submit" value="">
-					     		</form>
-					     	</div>
-						 <div class="clear"></div>
-					</div>
-						  <script type="text/javascript">
-								function DropDown(el) {
-									this.dd = el;
-									this.initEvents();
-								}
-								DropDown.prototype = {
-									initEvents : function() {
-										var obj = this;
-					
-										obj.dd.on('click', function(event){
-											$(this).toggleClass('active');
-											event.stopPropagation();
-										});	
-									}
-								}
-					
-								$(function() {
-					
-									var dd = new DropDown( $('#dd') );
-					
-									$(document).click(function() {
-										// all dropdowns
-										$('.wrapper-dropdown-2').removeClass('active');
-									});
-					
-								});
-					    </script>
-			   <div class="clear"></div>
-  		    </div>     				
-   		</div>
-{% endblock %}
+{% block title %}Home page - Flight skeleton{% endblock %}
 
-{% block main %}
-<div class="content_top">
-<div class="back-links">
-<p><a href="index.html">Home</a><span>/</span><a href="#" class="active">English</a></p>
-</div>
-<div class="clear"></div>
-</div>
-<div class="section group">
-<div class="cont-desc span_1_of_2">
-<div class="product-details">				
-<div class="grid images_3_of_2">
-	<img src="{{ movie.posters }}" alt="" />
-</div>
-<div class="desc span_3_of_2">
-<h2>{{ movie.name }}</h2>
-<p>{{movie.slogan}}</p>					
-<div class="price">
-	<p>Price: <span>$500</span></p>
-</div>
-<div class="available">
-	<ul>
-	  <li><span>Model:</span> &nbsp; Model 1</li>
-	  <li><span>Shipping Weight:</span>&nbsp; 5lbs</li>
-	  <li><span>Units in Stock:</span>&nbsp; 566</li>
-    </ul>
-</div>
-<div class="share-desc">
-<div class="share">
-	<p>Number of units :</p><input class="text_box" type="text">				
-</div>
-<div class="button"><span><a href="#">Add to Cart</a></span></div>					
-<div class="clear"></div>
-</div>
-<div class="wish-list">
-	<ul>
-		<li class="wish"><a href="#">Add to Wishlist</a></li>
-	    <li class="compare"><a href="#">Add to Compare</a></li>
-	</ul>
-</div>
-</div>
-<div class="clear"></div>
-</div>
-<div class="product_desc">	
-<h2>Описание</h2>
-<p>{{ movie.description }}</p>
-</div>
-</div>
-<div class="rightsidebar span_3_of_1 sidebar">
-<h2>Specials</h2>
- 	<div class="special_movies">
- 	   <div class="movie_poster">
- 		  <a href="preview.html"><img src="images/end-game.jpg" alt="" /></a>
- 		 </div>
- 		   <div class="movie_desc">
-		    <h3><a href="preview.html">End Game</a></h3>
-			   <p><span>$620.87</span> &nbsp; $500.35</p>
-			     <span><a href="#">Add to Cart</a></span>
-			 </div>
-			<div class="clear"></div>
- 		</div>	
- 		<div class="special_movies">
- 	   <div class="movie_poster">
- 		  <a href="preview.html"><img src="images/Coraline.jpg" alt="" /></a>
- 		 </div>
- 		   <div class="movie_desc">
-		    <h3><a href="preview.html">Coraline</a></h3>
-			   <p><span>$620.87</span> &nbsp; $500.35</p>
-			     <span><a href="#">Add to Cart</a></span>
-			 </div>
-			<div class="clear"></div>
- 		</div>	
- 		<div class="special_movies">
- 	   <div class="movie_poster">
- 		  <a href="preview.html"><img src="images/Eclipse.jpg" alt="" /></a>
- 		 </div>
- 		   <div class="movie_desc">
-		    <h3><a href="preview.html">Eclipse</a></h3>
-			   <p><span>$620.87</span> &nbsp; $500.35</p>
-			     <span><a href="#">Add to Cart</a></span>
-			 </div>
-			<div class="clear"></div>
- 		</div>	
- 		<div class="special_movies">
- 	   <div class="movie_poster">
- 		  <a href="preview.html"><img src="images/Priest.jpg" alt="" /></a>
- 		 </div>
- 		   <div class="movie_desc">
-		    <h3><a href="preview.html">Priest 3D</a></h3>
-			   <p><span>$620.87</span> &nbsp; $500.35</p>
-			     <span><a href="#">Add to Cart</a></span>
-			 </div>
-			<div class="clear"></div>
- 		</div>	
- 		<div class="special_movies">
- 	    <div class="movie_poster">
- 		  <a href="preview.html"><img src="images/Sorority_Wars.jpg" alt="" /></a>
- 		 </div>
- 		   <div class="movie_desc">
-		    <h3><a href="preview.html">Sorority Wars</a></h3>
-			   <p><span>$620.87</span> &nbsp; $500.35</p>
-			     <span><a href="#">Add to Cart</a></span>
-			 </div>
-			<div class="clear"></div>
- 		</div>			 
-	   </div>
-	 </div>
+{% block content %}
+      <div class="jumbotron">
+        <h1>Jumbotron heading</h1>
+        <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <h4>Subheading</h4>
+          <p>Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum.</p>
+
+          <h4>Subheading</h4>
+          <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras mattis consectetur purus sit amet fermentum.</p>
+
+          <h4>Subheading</h4>
+          <p>Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+        </div>
+      </div>
 {% endblock %}

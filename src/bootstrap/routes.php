@@ -14,3 +14,7 @@ Flight::map('notFound', function(){
 });
 
 Flight::route('/phpinfo', array("PageController", 'phpinfoAction'));
+
+Flight::route('/install-example/', function(){
+	echo "install system";
+});

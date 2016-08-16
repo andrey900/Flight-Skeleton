@@ -97,7 +97,7 @@ After open browser use link: [http://localhost:8080](http://localhost:8080)
     │   │   ├── FrontController.php     # Example: Base controller and logic for front-end
     │   │   └── PageController.php      # Example: Specific controller for type page
     │   └── Models
-    │       └── Pages.php               # Example: Page model for sql table "page"
+    │       └── Pages.php               # Example: Page model for sql table "pages"
     └── templates
         └── main                        # Example: template
              ├── base.twig              # Base template layout

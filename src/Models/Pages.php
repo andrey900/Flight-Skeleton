@@ -13,4 +13,9 @@ class Pages extends Model {
 	{
 		return self::where("is_home", true)->where('active', true)->firstOrFail();
 	}
+
+	public static function getAll()
+	{
+		return self::where("is_home", false)->where('active', true)->get();
+	}
 }
