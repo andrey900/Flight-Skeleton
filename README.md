@@ -1,18 +1,18 @@
 # Flight Skeleton
-Simple Flight Framework skeleton application with Twig &amp; Monolog &amp; Eloquent ORM. This package is suitable for any web hosting with **php** version higher **5.3**. Use this skeleton application to quickly setup and start working on a new application. This application does not use latest version libraries: Monolog, Eloquent ORM - since the more recent versions use a higher php version.
+Simple **Flight** micro Framework skeleton application with **Twig** &amp; **Monolog** &amp; **Eloquent ORM**. This package is suitable for any web hosting with **php** version higher **5.3**. Use this skeleton application to quickly setup and start working on a new application. This application does not use latest version libraries: Monolog, Eloquent ORM - since the more recent versions use a higher php version.
 
 # Menu
- - Installation
+ - **Installation**
     - [Use composer](https://github.com/andrey900/Flight-Skeleton#installation-use-composer)
     - [Use git](https://github.com/andrey900/Flight-Skeleton#installation-use-git)
     - [Use unix console](https://github.com/andrey900/Flight-Skeleton#installation-of-the-unix-console)
     - [Use browser](https://github.com/andrey900/Flight-Skeleton#installation-use-browser)
- - Start
+ - **Start**
     - [First start](https://github.com/andrey900/Flight-Skeleton#first-start)
- - Structure
+ - **Structure**
     - [Folder structure](https://github.com/andrey900/Flight-Skeleton#folder-structure)
     - [Files structure](https://github.com/andrey900/Flight-Skeleton#files-structure)
- - Examples
+ - **Examples**
     - [Config example](https://github.com/andrey900/Flight-Skeleton#config-example)
     - [Install example site](https://github.com/andrey900/Flight-Skeleton#install-example-site-and-db-structure)
  - [More links and docs](https://github.com/andrey900/Flight-Skeleton#more-links-and-docs)
@@ -49,7 +49,7 @@ Download the zip archive [use link](https://github.com/andrey900/Flight-Skeleton
 
 ### First start
 
-Open file src/bootstrap/config.php for edit, and edit db section for correct connection db. More info for config file [link](https://github.com/andrey900/Flight-Skeleton#config-example)
+Open file **src/bootstrap/config.php** for edit, and enter the correct data for your connection db. More info for config file [link](https://github.com/andrey900/Flight-Skeleton#config-example)
 
 Copy files to you root webserver folder. Open browser input you host.
 Local start use php in unix:
@@ -127,7 +127,7 @@ Example:
 
 ### Install example site and db structure
 
-Follow for link: */install-example/* and click button *install*.
+Follow for link: ***/install-example/*** and click button "*Install*".
 
 > Remember: You must first start and correctly configure a database connection.
 
