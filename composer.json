@@ -1,0 +1,30 @@
+{
+	"name": "andrey900/flight-skeleton",
+    "description": "Simple Flight Framework skeleton application with Twig & Monolog & Eloquent ORM",
+    "keywords": ["flight", "mvc", "fast", "php-5.3", "skeleton", "psr-4"],
+    "homepage": "https://github.com/andrey900/flight-skeleton",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Andrey Leo",
+            "email": "andrey@avgz.net",
+            "homepage": "https://github.com/andrey900",
+            "role": "Lead Developer"
+        }
+	],
+    "require": {
+    	"php": ">=5.3.0",
+        "mikecao/flight": "^1.2",
+        "monolog/monolog": "1.21.0",
+        "illuminate/database": "v4.1.30",
+        "twig/twig": "~1.2.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/App",
+            "Models\\": "src/Models",
+            "Controllers\\": "src/Controllers"
+        }
+    }
+}
