@@ -3,19 +3,19 @@ Simple Flight Framework skeleton application with Twig &amp; Monolog &amp; Eloqu
 
 # Menu
  - Installation
-    - Use git
-    - Use composer
-    - Use unix console
-    - Use browser
+    - [Use composer](https://github.com/andrey900/Flight-Skeleton#installation-use-composer)
+    - [Use git](https://github.com/andrey900/Flight-Skeleton#installation-use-git)
+    - [Use unix console](https://github.com/andrey900/Flight-Skeleton#installation-of-the-unix-console)
+    - [Use browser](https://github.com/andrey900/Flight-Skeleton#installation-use-browser)
  - Start
-    - First start
+    - [First start](https://github.com/andrey900/Flight-Skeleton#first-start)
  - Structure
-    - Folder structure
-    - Files structure
+    - [Folder structure](https://github.com/andrey900/Flight-Skeleton#folder-structure)
+    - [Files structure](https://github.com/andrey900/Flight-Skeleton#files-structure)
  - Examples
-    - Config example
-    - Install example site
- - More links and docs
+    - [Config example](https://github.com/andrey900/Flight-Skeleton#config-example)
+    - [Install example site](https://github.com/andrey900/Flight-Skeleton#install-example-site-and-db-structure)
+ - [More links and docs](https://github.com/andrey900/Flight-Skeleton#more-links-and-docs)
 
 ### Installation use composer
 
@@ -48,6 +48,8 @@ Download the zip archive [use link](https://github.com/andrey900/Flight-Skeleton
 > Remember: The string **"path/to/install"** should be replaced by your folder path.
 
 ### First start
+
+Open file src/bootstrap/config.php for edit, and edit db section for correct connection db. More info for config file [link](https://github.com/andrey900/Flight-Skeleton#config-example)
 
 Copy files to you root webserver folder. Open browser input you host.
 Local start use php in unix:
@@ -132,7 +134,7 @@ Follow for link: */install-example/* and click button *install*.
 ### More links and docs
 
 More information can be found in the documentation of individual system modules:
-    - [Flight](http://flightphp.com/learn/)
-    - [Twig](http://twig.sensiolabs.org/documentation)
-    - [Illuminate ORM](https://laravel.com/docs/4.2/queries)
-    - [Monolog](https://github.com/Seldaek/monolog/blob/master/doc/01-usage.md)
+  - [Flight](http://flightphp.com/learn/)
+  - [Twig](http://twig.sensiolabs.org/documentation)
+  - [Illuminate ORM](https://laravel.com/docs/4.2/queries)
+  - [Monolog](https://github.com/Seldaek/monolog/blob/master/doc/01-usage.md)
