@@ -13,8 +13,8 @@ return array(
 		"template.name" => "main",
 	),
 	"twig" => array(
-		// 'cache'	=>	'twig/',
-		// 'cache'	=>	false,
+		// 'cache'	=>	SITE_DIR.'cache'.DIRECTORY_SEPARATOR.'twig'.DIRECTORY_SEPARATOR,
+		// 'cache'	=>	true,
 		'auto_reload' => true,
 		'debug'	=>	true,
 	),
