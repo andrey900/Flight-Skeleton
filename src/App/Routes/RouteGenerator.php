@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Routes;
 
 use Flight;
 use Illuminate\Support\Str;
@@ -44,10 +44,11 @@ class RouteGenerator
 				$arRouterKeys[$arT[0]] = $arT[0];
 			}
 			foreach ($arRouterKeys as $k) {
+				$controller = $routerGroup[$k.'.controller'];
 				Flight::route(
 					$routerGroup[$k.'.pattern'], 
 					array(
-						Flight::$routerGroup[$k.'.controller'](), 
+						Flight::$controller(), 
 						$routerGroup[$k.'.action']
 					)
 				);

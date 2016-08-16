@@ -18,7 +18,7 @@
         "mikecao/flight": "^1.2",
         "monolog/monolog": "1.21.0",
         "illuminate/database": "v4.1.30",
-        "twig/twig": "~1.2.4"
+        "twig/twig": "1.24"
     },
     "autoload": {
         "psr-4": {

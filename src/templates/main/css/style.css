@@ -1,0 +1,86 @@
+body {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.container {
+    max-width: 730px;
+}
+
+.header {
+    margin-bottom: 30px;
+}
+.header, .marketing, .footer {
+    padding-left: 0;
+    padding-right: 0;
+}
+.header {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 20px;
+}
+.pull-right {
+    float: right !important;
+}
+.nav {
+    list-style: outside none none;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.nav-pills > li {
+    float: left;
+}
+.nav > li {
+    display: block;
+    position: relative;
+}
+.nav-pills > li.active > a, .nav-pills > li.active > a:focus, .nav-pills > li.active > a:hover {
+    background-color: #337ab7;
+    color: #fff;
+}
+.nav-pills > li > a {
+    border-radius: 4px;
+}
+.nav > li > a {
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+}
+.header h3 {
+    line-height: 40px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    padding-left: 60px;
+    padding-right: 60px;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    border-radius: 6px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.jumbotron {
+    border-bottom: 0 none;
+}
+.jumbotron {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+}
+.jumbotron {
+    padding-bottom: 48px;
+    padding-top: 48px;
+}
+.jumbotron {
+    background-color: #eee;
+    color: inherit;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.marketing {
+    margin: 40px 0;
+}
+.footer {
+    border-top: 1px solid #e5e5e5;
+    color: #777;
+    padding-top: 19px;
+}

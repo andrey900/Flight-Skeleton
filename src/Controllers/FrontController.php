@@ -14,6 +14,8 @@ class FrontController
 	protected $routesSettings;
 
 	public function __construct(){
+		$this->appConfig = Flight::getConfig();
+
 		$this->pageData = array(
 			"h1" => "",
 			"title" => "",
@@ -21,9 +23,11 @@ class FrontController
 			"description" => "",
 			"router" => "",
 			"sitename" => "",
+			"request" => Flight::request(),
+			"menu" => $this->appConfig['menu']
 		);
 
-		$this->appConfig = Flight::getConfig();
+		
 		$this->routesSettings = $this->appConfig['routes'];
 	}
 

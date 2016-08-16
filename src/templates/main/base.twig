@@ -12,6 +12,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="/src/templates/main/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/src/templates/main/css/style.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -25,10 +26,16 @@
     <div class="container">
       <div class="header clearfix">
         {% block top_nav %}
+        
         <nav>
           <ul class="nav nav-pills pull-right">
-            <li role="presentation" class="active"><a href="#">Home</a></li>
-            <li role="presentation"><a href="#">Install</a></li>
+            {% for name, url in menu %}
+              {% set classValue = "" %}
+              {% if request.url == url %}
+              {% set classValue = "active" %}
+              {% endif %}
+              <li role="presentation" class="{{classValue}}"><a href="{{url}}">{{name}}</a></li>
+            {% endfor %}
           </ul>
         </nav>
         {% endblock %}

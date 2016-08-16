@@ -15,22 +15,23 @@ class PageController extends FrontController
 	}
 
 	public function homeAction(){
-		if( !Pages::getHomePage() ){
-			Flight::notFound();
-			return;
+		try {
+			$connection = Flight::db();
+			//echo "<pre>";print_r($connection->getConnection());
+			//$connection->connection();
+			//$this->pageData['homepage'] = Pages::getHomePage();
+			//$this->pageData['routePages'] = $this->routesSettings['pages'];
+		} catch (Exception $e){
+			echo "string";
 		}
-		$connection = Flight::db();
-print_r($connection->connection()->getDatabaseName());
-		$this->pageData['homepage'] = Pages::getHomePage();
-		$this->pageData['routePages'] = $this->routesSettings['pages'];
 
 		$this->render('home.twig');
 	}
 
 	public function detailAction($code){
-		$this->pageData['page'] = Pages::where('active', true)->where('code', $code)->firstOrFail();
+		/*$this->pageData['page'] = Pages::where('active', true)->where('code', $code)->firstOrFail();
 		$this->pageData['routePages'] = $this->routesSettings['pages'];
-
+*/
 		$this->render('pageDetail.twig');
 	}
 

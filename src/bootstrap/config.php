@@ -34,5 +34,9 @@ return array(
 		"pages" => 
 			RouteGenerator::generateArrRoute('index', '/pages/', '/', 'PageController') + 
 			RouteGenerator::generateArrRoute('detail', '/page/#code#/', '/page/@code[\w]+/', 'PageController'),
-	)
+	),
+	"menu" => array(
+		"Home" => "/",
+		"Install" => "/install-example/"
+	),
 );
