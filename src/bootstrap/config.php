@@ -18,7 +18,7 @@ return array(
 		'auto_reload' => true,
 		'debug'	=>	true,
 	),
-	"db" => array(
+	/*"db" => array(
 		'driver'    => 'mysql',
 		'host'      => 'localhost',
 		'database'  => 'db_name',
@@ -27,13 +27,17 @@ return array(
 		'charset'   => 'utf8',
 		'collation' => 'utf8_unicode_ci',
 		'prefix'    => '',
+	)*/
+	"db" => array(
+		'driver'    => 'sqlite',
+		'database'  => SITE_DIR.'db_name.sqlite',
 	),
 	"routes" => array(
 		"home" => 
 			RouteGenerator::generateArrRoute('index', '/', '/', 'PageController@homeAction'),
 		"pages" => 
-			RouteGenerator::generateArrRoute('index', '/pages/', '/', 'PageController') + 
-			RouteGenerator::generateArrRoute('detail', '/page/#code#/', '/page/@code[\w]+/', 'PageController'),
+			RouteGenerator::generateArrRoute('index', '/pages/', '/pages/', 'PageController') + 
+			RouteGenerator::generateArrRoute('detail', '/page/#code#/', '/page/@code:[\w]+/', 'PageController'),
 	),
 	"menu" => array(
 		"Home" => "/",

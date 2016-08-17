@@ -16,6 +16,6 @@ class Pages extends Model {
 
 	public static function getAll()
 	{
-		return self::where("is_home", false)->where('active', true)->get();
+		return self::where('active', true)->where('is_home', false)->get();
 	}
 }

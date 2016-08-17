@@ -8,31 +8,31 @@ use Flight;
 class PageController extends FrontController
 {
 	public function indexAction(){
-		$this->pageData['pages'] = Pages::getAll();
-		$this->pageData['routePages'] = $this->routesSettings['pages'];
+		try {
+			$this->pageData['pages'] = Pages::getAll();
+			$this->pageData['routePages'] = $this->routesSettings['pages'];
+		} catch (\Exception $e){}
 
 		$this->render('pageLists.twig');
 	}
 
 	public function homeAction(){
 		try {
-			$connection = Flight::db();
-			//echo "<pre>";print_r($connection->getConnection());
-			//$connection->connection();
-			//$this->pageData['homepage'] = Pages::getHomePage();
-			//$this->pageData['routePages'] = $this->routesSettings['pages'];
-		} catch (Exception $e){
-			echo "string";
-		}
+			$this->pageData['homepage'] = Pages::getHomePage();
+			$this->pageData['routePages'] = $this->routesSettings['pages'];
+		} catch (\Exception $e){}
 
 		$this->render('home.twig');
 	}
 
-	public function detailAction($code){
-		/*$this->pageData['page'] = Pages::where('active', true)->where('code', $code)->firstOrFail();
-		$this->pageData['routePages'] = $this->routesSettings['pages'];
-*/
-		$this->render('pageDetail.twig');
+	public function detailAction($code){print_r($code);die;
+		try {
+			$this->pageData['page'] = Pages::where('active', true)->where('code', $code)->firstOrFail();
+			$this->pageData['routePages'] = $this->routesSettings['pages'];
+			$this->render('pageDetail.twig');
+		} catch (\Exception $e){
+			Flight::notFound();
+		}
 	}
 
 	public static function phpinfoAction(){
