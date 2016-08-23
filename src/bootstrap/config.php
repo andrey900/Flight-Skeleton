@@ -37,7 +37,7 @@ return array(
 			RouteGenerator::generateArrRoute('index', '/', '/', 'PageController@homeAction'),
 		"pages" => 
 			RouteGenerator::generateArrRoute('index', '/pages/', '/pages/', 'PageController') + 
-			RouteGenerator::generateArrRoute('detail', '/page/#code#/', '/page/@code:[\w]+/', 'PageController'),
+			RouteGenerator::generateArrRoute('detail', '/page/#code#/', '/page/@code:[\w\-\_]+/', 'PageController'),
 	),
 	"menu" => array(
 		"Home" => "/",
