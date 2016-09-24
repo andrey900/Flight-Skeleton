@@ -33,7 +33,7 @@ Composer will create a new Flight Skeleton project under the `path/to/install` d
 
 Git will create a new Flight Skeleton project under the `path/to/install` directory.
 
-### Installation of the unix console
+### Installation of the unix console (not realization)
 
 ```console
     $ mkdir path/to/install && cd path/to/install
