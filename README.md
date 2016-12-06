@@ -17,10 +17,10 @@ Simple **Flight** micro Framework skeleton application with **Twig** &amp; **Mon
     - [Install example site](https://github.com/andrey900/Flight-Skeleton#install-example-site-and-db-structure)
  - [More links and docs](https://github.com/andrey900/Flight-Skeleton#more-links-and-docs)
 
-### Installation use composer (not realization)
+### Installation use composer
 
 ```console
-    $ composer create-project andrey900/Flight-Skeleton path/to/install
+    $ composer create-project andrey900/flight-skeleton path/to/install
 ```
 
 Composer will create a new Flight Skeleton project under the `path/to/install` directory.
