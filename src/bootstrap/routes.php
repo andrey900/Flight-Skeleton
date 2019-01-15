@@ -1,6 +1,6 @@
 <?php
 
-use Controllers\PageController;
+use Controllers\FrontController;
 
 /* Frontend routers */
 $config = Flight::getConfig();
@@ -9,7 +9,7 @@ App\Routes\RouteGenerator::registerRouters();
 
 Flight::map('notFound', function(){
     // Display custom 404 page
-	$controller = new PageController();
+	$controller = new FrontController();
 	$controller->notFound();
 });
 
